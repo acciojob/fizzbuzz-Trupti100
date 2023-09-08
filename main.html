@@ -1,16 +1,44 @@
 <!DOCTYPE html>
-
 <html>
-
 <head>
-	<link rel="stylesheet" href="styles.css">
+  <title>FizzBuzz</title>
+  <style>
+    /* Add some basic styling for better appearance */
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin: 50px;
+    }
+  </style>
 </head>
-
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
+  <script>
+    // Initialize an empty string to store the output
+    let output = "";
 
+    // Loop from 1 to 20
+    for (let i = 1; i <= 20; i++) {
+      // Check for multiples of both 3 and 5 first
+      if (i % 3 === 0 && i % 5 === 0) {
+        output += "FizzBuzz\n";
+      }
+      // Check for multiples of 3
+      else if (i % 3 === 0) {
+        output += "Fizz\n";
+      }
+      // Check for multiples of 5
+      else if (i % 5 === 0) {
+        output += "Buzz\n";
+      }
+      // For other numbers, add the number itself
+      else {
+        output += i + "\n";
+      }
+    }
+
+    // Display the output using the alert function
+    alert(output);
+  </script>
 </body>
-
 </html>
+
